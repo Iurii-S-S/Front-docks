@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auntification</title>
+    <link rel="stylesheet" href="style-auntification.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Разработка веб-приложения</h1>
+        <a href="uslugi.html" class="back-link">Вернуться на главную</a>
+    </div>
+    <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Как вас зовут</label>
+            <input type="text" id="name" name="name" placeholder="например Иванов Иван Иванович" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Ваш e-mail</label>
+            <input type="email" id="email" name="email" placeholder="test@mail.ru" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 999 999 99 99" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Страна</label>
+            <select id="country" name="country" required>
+                <option value="Россия">Россия</option>
+                <option value="Украина">Украина</option>
+                <option value="Беларусь">Беларусь</option>
+                <option value="Казахстан">Казахстан</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date">Дата</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Ваш комментарий"></textarea>
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="consent" required> Согласен на обработку моих персональных данных
+            </label>
+        </div>
+        <button type="submit">Отправить заявку</button>
+    </form>
+
+</body>
+
+</html>

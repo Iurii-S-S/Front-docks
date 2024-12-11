@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>главная</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="top-header">
+      <a href="index.html"><img src="logo.png" alt="Логотип" class="logo"></a>
+      <div class="group-info">
+        <p>Группа: ЭФБО-08-23
+        </p>
+        <p> Саложин Юрий Сергеевич
+        </p>
+      </div>
+    </div>
+    <nav class="main-menu", style="background: linear-gradient(blue, rgb(104, 60, 104));">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="first.html">Первый семестр</a></li>
+        <li><a href="second.html">Второй семестр</a></li>
+        <li><a href="uslugi.html">Услуги</a></li>
+        <li><a href="#">Авторизация</a></li>
+      </ul>
+      <img id="studentPhoto" src="photo.jpg" alt="Фото" class="photo">
+
+      <script>
+        const studentPhoto = document.getElementById('studentPhoto');
+        studentPhoto.addEventListener('mouseenter', function() {
+            this.classList.add('rotate');
+        });
+        studentPhoto.addEventListener('mouseleave', function() {
+            this.classList.remove('rotate');
+        });
+    </script>
+
+    </nav>
+
+  </header>
+
+
+  <main class="lectures">
+    <aside class="left-menu">
+      <p>
+          навигация по сайту
+      </p>
+      <ul>
+        <li><a href="#sec1">Лекции</a></li>
+        <li><a href="#sec2">Практики</a></li>
+        <li><a href="#sec3">PDF-файл</a></li>
+        <li><a href="#sec3">Карта</a></li>
+      </ul>
+  </aside>
+    <div id="qwe">
+      <h1 align="center">Названия и Посещение предметов</h1>
+      <section id="sec1">
+        <h2 align="center">Лекции 1 семестр</h2>
+        <table border="1" , align="center" class="table">
+          <tr>
+            <td>Номер</td>
+            <td>Тема</td>
+            <td>Посещение</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Основы HTML</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Основы CSS</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Создание ПО</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Основы JavaScript</td>
+            <td>-</td>
+          </tr>
+          <td>5</td>
+          <td>Математический анализ</td>
+          <td>+</td>
+          </tr>
+          <td>6</td>
+          <td>ОФП</td>
+          <td>+</td>
+          </tr>
+          <td>7</td>
+          <td>Основы GIT</td>
+          <td>+</td>
+          </tr>
+          <td>8</td>
+          <td>Дискретная математика</td>
+          <td>+</td>
+          </tr>
+        </table>
+      </section>
+
+      <button id="showSecondSemester">Посмотреть лекции второго семестра</button>
+
+      <section id="sec2">
+        <h2 align="center">Практики 1 семестр</h2>
+        <table border="1" , align="center" class="table2">
+          <tr>
+            <td>Номер</td>
+            <td>Тема</td>
+            <td>Посещение</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Основы HTML</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Основы CSS</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Создание ПО</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Основы JavaScript</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Математический анализ</td>
+            <td>+</td>
+          </tr>
+          <td>6</td>
+          <td>ОФП</td>
+          <td>+</td>
+          </tr>
+          <td>7</td>
+          <td>Основы GIT</td>
+          <td>+</td>
+          </tr>
+          <td>8</td>
+          <td>Дискретная математика</td>
+          <td>+</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Продвинутый HTML</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Продвинутый CSS</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Курсовая</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Продвинутый JavaScript</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Линейная алгебра</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Базы данных</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Основы GIT</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Искуственный Интелект</td>
+            <td>+</td>
+          </tr>
+        </table>
+      </section>
+
+      
+
+      <script>
+        const button = document.getElementById('showSecondSemester');
+        const table = document.querySelector('table');
+
+        button.addEventListener('click', function() {
+            const secondSemesterTopics = [
+                "Базовое бэкенд-приложение",
+                "HTTP-запросы",
+                "JSON и работа с ним",
+                "HTTP-ответы",
+                "Проектирование API",
+                "Роутинг и его настройка",
+                "NoSQL базы данных",
+                "Обеспечение авторизации и доступа пользователей",
+                "Работа сторонних сервисов уведомления и авторизации",
+                "Основы ReactJS",
+                "Работа с компонентами динамической DOM",
+                "Использование хуков в React",
+                "Основы микросервисной архитектуры",
+                "Разработка классических модулей веб-приложений",
+                "Разработка классических модулей веб-приложений"
+        ];
+
+            // Очищаем таблицу
+            const rows = table.getElementsByTagName('tr');
+            for (let i = rows.length - 1; i > 0; i--) { // Удаляем все строки, кроме заголовка
+            table.deleteRow(i);
+        }
+
+        // Добавляем новые темы во 2-й семестр
+            secondSemesterTopics.forEach((topic, index) => {
+                const newRow = table.insertRow(-1);
+                const cell1 = newRow.insertCell(0);
+                const cell2 = newRow.insertCell(1);
+            cell1.innerHTML = index + 1; // Добавляем номер темы
+            cell2.innerHTML = topic; // Добавляем тему практики
+        });
+    });
+</script> 
+
+      <section id="sec3">
+        <h2>Программа</h2>
+        <object data="pdfka.pdf" type="application/pdf" width="600" height="650">
+          <p><b>Упс! Кажется, PDF-файл не отобразился.</b> Попробуйте скачать его <a href="pdfka.pdf">отсюда</a>.</p>
+        </object>
+      </section>
+
+      <section id="sec4">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2ca7eb6e2bafdf5c24d92a8ef0a2698c34d24aa4eaae3606906c09c2f6fbe15&amp;source=constructor"
+          width="250" height="200" frameborder="0"<h5>Занятия проходят по адресу пр. Вернадского, д. 78</h5>></iframe>
+          <h5>Занятия проходят по адресу пр. Вернадского, д. 78</h5>
+      </section>
+    </div>
+  </main>
+  <div class="footer">
+    <footer>
+        <div><p>@ Salozhin Yury Sergeevich, 2024</p></div>
+    </footer>
+</div>
+</body>
+
+</html>

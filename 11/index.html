@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>главная</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer scr="C:\Users\saloz\OneDrive\Рабочий стол\11\script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="top-header">
+            <a href="index.html"><img src="logo.png" alt="Логотип" class="logo"></a>
+            <div class="group-info">
+                <p>Группа: ЭФБО-08-23
+                </p>
+                <p> Саложин Юрий Сергеевич
+                </p>
+            </div>
+        </header>
+        <nav class="main-menu">
+                <a href="first.html">Первый семестр</a>
+                <a href="second.html">Второй семестр</a>
+                <a href="uslugi.html">Услуги</a>
+                <a href="#">Авторизация</a>
+            </ul>
+            <img id="studentPhoto" src="photo.jpg" alt="Фото" class="photo">
+            <script>
+                const studentPhoto = document.getElementById('studentPhoto');
+        
+                studentPhoto.addEventListener('mouseover', function() {
+                    this.style.width = '300px'; // Увеличиваем ширину на 10%
+                    this.style.height = '300px'; // Увеличиваем высоту на 10%
+                });
+        
+                // Обработчик события mouseout для уменьшения фотографии обратно
+                studentPhoto.addEventListener('mouseout', function() {
+                    this.style.width = '150px'; // Возвращаем исходный размер
+                    this.style.height = '150px'; // Возвращаем исходный размер
+                });
+        
+                // Обработчик события click для замены фотографии на изображение преподавателя
+                studentPhoto.addEventListener('click', function() {
+                    this.src = 'logo.png'; // Изменяем источник на фото преподавателя
+                });
+
+                studentPhoto.addEventListener('dblclick', function() {
+                    alert('Не налегай, у меня не так много любимых преподавателей');
+
+                });
+        </script>
+        </nav>
+        <aside class="left-menu">
+            <p>
+                навигация по сайту
+            </p>
+            <ul>
+                <li><a href="#front">frontend</a></li>
+                <li><a href="#back">backend</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1 id="myHeader">Добро пожаловать на мой сайт</h1>
+            <script>
+                const header = document.getElementById('myHeader');
+                header.addEventListener('click', function() {
+                    alert("Вы кликнули на заголовок - так держать!");
+                });
+
+                header.addEventListener('mouseenter', function() {
+                    this.style.fontSize = '48px';
+                });
+                header.addEventListener('mouseleave', function() {
+                    this.style.fontSize = '40px';
+                });
+            </script>
+            <p>Меня зовут Саложин Юрий Сергеевич и я начинающий специалист по веб-разработке.
+            </p>
+            <div id="front">
+                <h2>
+                    frontend
+                </h2>
+                <p id="text">Фронтенд (или клиентская часть)&nbsp;&mdash; это то, что видит пользователь. Он&nbsp;включает
+                    в&nbsp;себя все визуальные элементы <nobr>веб-сайта</nobr> или приложения: кнопки, формы,
+                    изображения и&nbsp;текст. Фронтенд разработчики используют языки разметки и&nbsp;стилизации,
+                    такие как HTML, CSS и&nbsp;JavaScript, чтобы создавать интерактивные и&nbsp;привлекательные
+                    интерфейсы. Основная задача фронтенда&nbsp;&mdash; обеспечить удобство использования
+                    и&nbsp;эстетическую привлекательность.
+                </p>
+                <script>
+                    const paragraph = document.getElementById('text');
+            
+                    paragraph.addEventListener('click', function () {
+                        const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+                        this.style.backgroundColor = randomColor; // Изменяем цвет фона
+                    });
+                </script>
+                <video controls width="250">
+                    <source src="https://www.youtube.com/watch?v=0tctP1wZcO4" type="video/webm">
+                </video>
+                
+                
+
+            </div>
+            <div id="back">
+                <h2>
+                    backend
+                </h2>
+                <p>Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных,
+                    управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки
+                    программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для
+                    создания логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и
+                    безопасность данных.
+                </p>
+                <video controls width="250">
+                    <source
+                        src="ADLYWILr5KjVtpDqV_GnyR3wyhj_giWKUg:1728502471444&q=backend&tbm=vid&source=lnms&fbs=AEQNm0CPug-YpF-dZ3eXO9visYFpeiQAVjODmv6aWbd8scMjF6wOUSWH4KsOP8nMIB6-ms8V0ExfGPukuwXToNn_DHLbtUGLBbDFsN83ZK02qvux4GbXwRNa4zTjadDCIXARUPNBHswfICYZ61w7yPXz77Ius-kKupnHUmuGNIwZZHXve89wepniyTB0RCjjAWZZ6LqFAMX_KPSYoaxvhlCScce5fXJ0JB66odo9yp7V3K76yKWDSJY&sa=X&ved=2ahUKEwjK57a-"
+                        type="video/webm">
+                </video>
+            </div>
+            <form class="myForm" id="myForm">
+                <label for="name">Имя:</label>
+                <br>
+                <input type="text" id="name" required>
+                <br>
+                
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="email" id="email" required>
+                <br>
+                
+                <label for="phone">Телефон:</label>
+                <br>
+                <input type="text" id="phone" required>
+                <br>
+        
+                <label for="date">Дата:</label>
+                <br>
+                <input type="date" id="date" required>
+                <br>
+        
+                <label for="comment">Комментарий:</label>
+                <br>
+                <textarea id="comment" required></textarea>
+                <br>
+        
+                <button type="submit">Отправить</button>
+            </form>
+        
+            <script>
+                const formData = {
+                    name: '',
+                    email: '',
+                    phone: '',
+                    date: '',
+                    comment: '',
+                   
+                };
+
+                function printData() {
+                        console.log(`Имя: ${this.name}`);
+                        console.log(`E-mail: ${this.email}`);
+                        console.log(`Телефон: ${this.phone}`);
+                        console.log(`Дата: ${this.date}`);
+                        console.log(`Комментарий: ${this.comment}`);
+                    }
+        
+                function submitForm(event) {
+                    event.preventDefault();
+        
+                    formData.name = document.getElementById('name').value.trim();
+                    formData.email = document.getElementById('email').value.trim();
+                    formData.phone = document.getElementById('phone').value.trim();
+                    formData.date = document.getElementById('date').value;
+                    formData.comment = document.getElementById('comment').value.trim();
+        
+                    if (!formData.name || !formData.email || !formData.comment) {
+                        alert("Пожалуйста, заполните все обязательные поля.");
+                        return;
+                    }
+        
+                    const phoneRegex = /^\d+$/;
+                    if (!phoneRegex.test(formData.phone)) {
+                        alert("Телефон должен содержать только цифры.");
+                        return;
+                    }
+        
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(formData.email)) {
+                        alert("Введите корректный E-mail.");
+                        return;
+                    }
+        
+                    printData(formData);
+                }
+
+                const form = document.getElementById('myForm');
+                    const message = document.getElementById('message');
+
+                    form.addEventListener('submit', function(event) {
+                        event.preventDefault();
+
+                        message.textContent = "Форма отправлена!";
+                        message.classList.add('visible');
+
+                        form.reset();
+                    });
+
+                document.getElementById('myForm').addEventListener('submit', submitForm);
+            </script>
+        </main>
+        <div class="footer">
+            <footer>
+                <div>
+                    <p>@ Salozhin Yury Sergeevich, 2024</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script defer scr="C:\Users\saloz\OneDrive\Рабочий стол\11\script.js"></script>
+</body>
+</html>
